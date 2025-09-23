@@ -3,12 +3,12 @@ link:https://github.com/fibanez6/System-Design-and-Coding-Interview[System Desig
 
 == Tech questions
 
-* xref:Data_Structures.adoc[Data Structures]
-* xref:Databases.adoc[Databases]
-* xref:Object_Oriented_Programming.adoc[Object Oriented Programming]
-* xref:Pattern_Desing.adoc[Pattern Desing]
-* xref:Principles_Design.adoc[Principles Design]
-* xref:Terminology.adoc[Terminology]
+* xref:Tech-questions/Data_Structures.adoc[Data Structures]
+* xref:Tech-questions/Databases.adoc[Databases]
+* xref:Tech-questions/Object_Oriented_Programming.adoc[Object Oriented Programming]
+* xref:Tech-questions/Pattern_Desing.adoc[Pattern Desing]
+* xref:Tech-questions/Principles_Design.adoc[Principles Design]
+* xref:Tech-questions/Terminology.adoc[Terminology]
 
 == System Design
 

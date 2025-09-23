@@ -31,6 +31,7 @@ replace_special_chars() {
 generate_index() {
     local path="$1"
     local level="$2"
+    local parent_folder="$3"
     for folder in "$path"/*/; do
         [ -d "$folder" ] || continue
         basename=$(basename "$folder")
@@ -60,8 +61,11 @@ generate_index() {
             continue
         fi
         
-        # echo "* xref:${folder}/${filename}.adoc[$text]"
-        echo "* xref:${cleanpath}[$text]"
+        if [[ -n "$parent_folder" ]]; then
+            echo "* xref:${parent_folder}/${cleanpath}[$text]"
+        else
+            echo "* xref:${cleanpath}[$text]"
+        fi        
     done
     echo ""
 }
@@ -92,7 +96,7 @@ generate_readme() {
     # Also append to the root README
     echo "== $(replace_special_chars "$current_folder")" >> "$ROOT_README"
     echo "" >> "$ROOT_README"
-    generate_index '.' 2 >> "$ROOT_README"
+    generate_index '.' 2 $current_folder >> "$ROOT_README"
     cd "$SCRIPT_PATH" || exit 1
 }
 
