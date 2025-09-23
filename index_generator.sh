@@ -112,7 +112,7 @@ echo "" >> "$ROOT_README"
 find . \
  -path "*/.git" -prune -o \
  -name "README.adoc" -prune -o \
- -mindepth 1 -maxdepth 2 -type d -print | while read -r dir; do
+ -mindepth 1 -maxdepth 2 -type d -print | sort | while read -r dir; do
     basename=$(basename "$dir")
     cleanpath="${dir#./}"
     if is_excluded "$cleanpath"; then
