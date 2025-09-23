@@ -4,12 +4,10 @@ link:https://github.com/fibanez6/System-Design-and-Coding-Interview[System Desig
 
 * xref:Data_Structures.adoc[Data Structures]
 * xref:Databases.adoc[Databases]
-* xref:Interview_Questions.adoc[Interview Questions]
 * xref:Object_Oriented_Programming.adoc[Object Oriented Programming]
 * xref:Pattern_Desing.adoc[Pattern Desing]
 * xref:Principles_Design.adoc[Principles Design]
 * xref:RESful_Design.adoc[RESful Design]
 * xref:Terminology.adoc[Terminology]
 * xref:Test_Questions.adoc[Test Questions]
-* xref:Tips.adoc[Tips]
 

@@ -5,14 +5,17 @@ link:https://github.com/fibanez6/System-Design-and-Coding-Interview[System Desig
 
 * xref:Tech-Questions/Data_Structures.adoc[Data Structures]
 * xref:Tech-Questions/Databases.adoc[Databases]
-* xref:Tech-Questions/Interview_Questions.adoc[Interview Questions]
 * xref:Tech-Questions/Object_Oriented_Programming.adoc[Object Oriented Programming]
 * xref:Tech-Questions/Pattern_Desing.adoc[Pattern Desing]
 * xref:Tech-Questions/Principles_Design.adoc[Principles Design]
 * xref:Tech-Questions/RESful_Design.adoc[RESful Design]
 * xref:Tech-Questions/Terminology.adoc[Terminology]
 * xref:Tech-Questions/Test_Questions.adoc[Test Questions]
-* xref:Tech-Questions/Tips.adoc[Tips]
+
+== General
+
+* xref:General/General_Questions.adoc[General Questions]
+* xref:General/Tips.adoc[Tips]
 
 == Online Tests
 

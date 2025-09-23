@@ -1,0 +1,7 @@
+= General
+
+link:https://github.com/fibanez6/System-Design-and-Coding-Interview[System Design and Coding Interview]
+
+* xref:General_Questions.adoc[General Questions]
+* xref:Tips.adoc[Tips]
+
