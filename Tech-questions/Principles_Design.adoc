@@ -1,0 +1,30 @@
+= Principles of Design
+:doctype: article
+:toc:
+:toclevels: 2
+
+== SOLID Principles
+
+The SOLID principles are five design guidelines for writing maintainable and scalable software:
+
+- **S**ingle Responsibility Principle (SRP): A class should have only one reason to change.
+- **O**pen/Closed Principle (OCP): Software entities should be open for extension, but closed for modification.
+- **L**iskov Substitution Principle (LSP): Subtypes must be substitutable for their base types.
+- **I**nterface Segregation Principle (ISP): Clients should not be forced to depend on interfaces they do not use.
+- **D**ependency Inversion Principle (DIP): Depend on abstractions, not on concretions.
+
+== DRY Principle
+
+Don't Repeat Yourself (DRY) encourages reducing duplication in code, promoting reuse and maintainability.
+
+== KISS Principle
+
+Keep It Simple, Stupid (KISS) advocates for simplicity in design and implementation, avoiding unnecessary complexity.
+
+== YAGNI Principle
+
+You Aren't Gonna Need It (YAGNI) suggests not implementing features until they are actually required.
+
+== Separation of Concerns
+
+Divide a system into distinct sections, each addressing a separate concern, to improve modularity and maintainability.

@@ -1,0 +1,15 @@
+= System Design and Coding Interview
+link:https://github.com/fibanez6/System-Design-and-Coding-Interview[System Design and Coding Interview]
+
+== Tech questions
+
+* xref:Data_Structures.adoc[Data Structures]
+* xref:Databases.adoc[Databases]
+* xref:Object_Oriented_Programming.adoc[Object Oriented Programming]
+* xref:Pattern_Desing.adoc[Pattern Desing]
+* xref:Principles_Design.adoc[Principles Design]
+* xref:Terminology.adoc[Terminology]
+
+== System Design
+
+

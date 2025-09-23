@@ -1,0 +1,6 @@
+[submodule "coding-interview-university"]
+	path = coding-interview-university
+	url = git@fibanez.github.com:fibanez6/coding-interview-university.git
+[submodule "CtCI-6th-Edition"]
+	path = CtCI-6th-Edition
+	url = git@fibanez.github.com:fibanez6/CtCI-6th-Edition.git

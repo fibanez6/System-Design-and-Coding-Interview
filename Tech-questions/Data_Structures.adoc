@@ -1,0 +1,147 @@
+= Data Structures
+:doctype: article
+:toc:
+:toclevels: 2
+
+== Arrays
+
+Arrays are a collection of elements identified by index or key. They provide fast access and modification by index.
+
+* Fixed size
+* Random access: O(1)
+* Insert/Delete: O(n)
+* Example:
++
+[source,python]
+----
+arr = [1, 2, 3, 4]
+print(arr[2])  # Output: 3
+----
+
+== Linked Lists
+
+Linked lists consist of nodes where each node contains data and a reference to the next node.
+
+* Dynamic size
+* Insert/Delete: O(1) (if pointer is known)
+* Access: O(n)
+* Example:
++
+[source,python]
+----
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.next = None
+
+head = Node(1)
+head.next = Node(2)
+----
+
+== Stacks
+
+Stacks are LIFO (Last-In-First-Out) data structures.
+
+* Push/Pop: O(1)
+* Access: O(n)
+* Used for function calls, undo operations
+* Example:
++
+[source,python]
+----
+stack = []
+stack.append(1)
+stack.append(2)
+stack.pop()  # Output: 2
+----
+
+== Queues
+
+Queues are FIFO (First-In-First-Out) data structures.
+
+* Enqueue/Dequeue: O(1)
+* Access: O(n)
+* Used for scheduling, buffering
+* Example:
++
+[source,python]
+----
+from collections import deque
+queue = deque()
+queue.append(1)
+queue.append(2)
+queue.popleft()  # Output: 1
+----
+
+== Hash Tables
+
+Hash tables store key-value pairs and provide fast lookup.
+
+* Average lookup/insert/delete: O(1)
+* Worst-case: O(n) (with poor hash function or many collisions)
+* Example:
++
+[source,python]
+----
+hash_table = {'a': 1, 'b': 2}
+print(hash_table['a'])  # Output: 1
+----
+
+== Trees
+
+Trees are hierarchical data structures with nodes connected by edges.
+
+* Binary Search Tree: O(log n) average search/insert/delete
+* Access: O(n) (for unbalanced tree)
+* Used for searching, sorting, hierarchical data
+* Example:
++
+[source,python]
+----
+class TreeNode:
+    def __init__(self, val):
+        self.val = val
+        self.left = None
+        self.right = None
+
+root = TreeNode(10)
+root.left = TreeNode(5)
+root.right = TreeNode(15)
+----
+
+== Graphs
+
+Graphs consist of nodes (vertices) and edges connecting them.
+
+* Used for modeling networks, relationships
+* Traversal: BFS, DFS
+* Access: O(n) (for traversing all nodes)
+* Example:
++
+[source,python]
+----
+graph = {
+    'A': ['B', 'C'],
+    'B': ['A', 'D'],
+    'C': ['A'],
+    'D': ['B']
+}
+----
+
+== Heaps
+
+Heaps are specialized tree-based structures for priority queues.
+
+* Insert/Remove min/max: O(log n)
+* Access: O(n) (for searching)
+* Used for scheduling, heap sort
+* Example:
++
+[source,python]
+----
+import heapq
+heap = []
+heapq.heappush(heap, 3)
+heapq.heappush(heap, 1)
+heapq.heappop(heap)  # Output: 1
+----

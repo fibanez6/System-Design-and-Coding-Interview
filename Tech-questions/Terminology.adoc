@@ -1,0 +1,91 @@
+= Terminology
+:doctype: article
+:toc:
+:toclevels: 2
+
+== Common Terminology in Software Development
+
+This document provides definitions for common terminology used in software development, particularly in the context of object-oriented programming (OOP) and design principles.
+
+* **Class**: A blueprint for creating objects. It defines a set of attributes and methods that the created objects will have.   
+* **Object**: An instance of a class. It contains data (attributes) and behavior (methods) defined by its class.
+* **Method**: A function defined within a class that operates on the data contained in the object.
+* **Attribute**: A variable that is associated with a class or an object. It holds data relevant to the object.
+* **Constructor**: A special method that is called when an object is instantiated. It initializes the object's attributes.
+* **Inheritance**: A mechanism by which a new class (subclass) can inherit attributes and methods from an existing class (superclass).
+* **Polymorphism**: The ability of different classes to be treated as instances of the same class through a common interface. It allows methods to do different things based on the object it is acting upon.
+* **Encapsulation**: The bundling of data (attributes) and methods that operate on that data into a single unit (class). It restricts direct access to some of an object's components.
+* **Abstraction**: The concept of hiding complex implementation details and showing only the necessary features of an object.
+* **Interface**: A contract that defines a set of methods that a class must implement, without dictating how these methods should be implemented.
+* **Module**: A file containing Python definitions and statements. It can define functions, classes, and variables.
+* **Package**: A way of organizing related modules into a single directory hierarchy.
+* **Dependency**: A relationship where one class or module relies on another to function correctly.
+* **Coupling**: The degree of direct knowledge that one class has of another. Low coupling is often desired.
+* **Cohesion**: The degree to which the elements inside a module belong together. High cohesion is often desired.
+* **DRY (Don't Repeat Yourself)**: A principle aimed at reducing the repetition of software patterns, promoting reuse and maintainability.
+* **KISS (Keep It Simple, Stupid)**: A design principle that emphasizes simplicity and avoiding unnecessary complexity.
+* **YAGNI (You Aren't Gonna Need It)**: A principle that suggests not implementing features until they are actually required.
+* **SOLID Principles**: A set of five design principles aimed at making software designs more understandable, flexible, and maintainable:
+  - **S**ingle Responsibility Principle (SRP): A class should have only one reason to change.
+  - **O**pen/Closed Principle (OCP): Software entities should be open for extension, but closed for modification.
+  - **L**iskov Substitution Principle (LSP): Subtypes must be substitutable for their base types without altering the correctness of the program.
+  - **I**nterface Segregation Principle (ISP): Clients should not be forced to depend on interfaces they do not use. 
+  - **D**ependency Inversion Principle (DIP): Depend on abstractions, not on concretions.
+* **Separation of Concerns**: The practice of dividing a system into distinct sections, each addressing a separate concern, to improve modularity and maintainability.
+* **Refactoring**: The process of restructuring existing code without changing its external behavior to improve its readability, maintainability, and extensibility.
+* **Unit Testing**: A software testing method where individual units or components of a software are tested in isolation to ensure they work as intended.
+* **Integration Testing**: A level of software testing where individual units are combined and tested as a group to identify issues in the interaction between components.
+* **Continuous Integration (CI)**: A development practice where developers integrate code into a shared repository frequently, often multiple times a day, to detect integration issues early.
+* **Continuous Deployment (CD)**: An extension of continuous integration where code changes are automatically deployed to production after passing automated tests.
+* **Agile Methodology**: An iterative approach to software development that emphasizes flexibility, collaboration, and customer feedback.
+* **Scrum**: An agile framework for managing complex projects, typically used in software development, that promotes teamwork, accountability, and iterative progress toward a well-defined goal.
+* **Kanban**: A visual workflow management method used to visualize work, limit work-in-progress, and maximize efficiency.
+* **Version Control**: A system that records changes to files over time, allowing developers to track revisions, revert to previous versions, and collaborate on code.
+* **Git**: A distributed version control system commonly used for source code management in software development.
+* **Branching**: The practice of creating separate lines of development in a version control system to work on features, fixes, or experiments without affecting the main codebase.
+* **Merge**: The process of integrating changes from one branch into another in a version control system.
+* **Pull Request (PR)**: A request to merge changes from one branch into another, typically used in collaborative development workflows to review and discuss code changes before integration.
+* **Code Review**: The practice of systematically examining code changes by other developers to identify issues, improve code quality, and share knowledge.
+* **Technical Debt**: The implied cost of additional rework caused by choosing an easy solution now instead of using a better approach that would take longer.
+* **Scalability**: The ability of a system to handle increased load by adding resources, such as hardware or software.
+* **Performance**: The responsiveness and efficiency of a system in terms of speed, resource usage, and throughput.
+* **Latency**: The time it takes for a system to respond to a request or perform an operation.
+* **Throughput**: The amount of work a system can handle in a given period of time.
+* **Load Balancing**: The process of distributing incoming network traffic across multiple servers to ensure no single server becomes overwhelmed, improving performance and reliability.
+* **Caching**: The practice of storing frequently accessed data in a temporary storage area (cache) to reduce access time and improve performance.
+* **Database**: An organized collection of data that can be easily accessed, managed, and updated. Common types include relational databases (e.g., MySQL, PostgreSQL) and NoSQL databases (e.g., MongoDB, Cassandra).
+* **Indexing**: A data structure technique used to improve the speed of data retrieval operations on a database table at the cost of additional writes and storage space.
+* **Normalization**: The process of organizing data in a database to reduce redundancy and improve data integrity.
+* **Denormalization**: The process of combining tables in a database to improve read performance at the cost of increased redundancy and potential data anomalies.
+* **ACID Properties**: A set of properties that guarantee reliable processing of database transactions:
+  - **A**tomicity: Ensures that a transaction is treated as a single unit, which either completes entirely or not at all.
+  - **C**onsistency: Ensures that a transaction brings the database from one valid state to another valid state.
+  - **I**solation: Ensures that concurrent transactions do not interfere with each other.
+  - **D**urability: Ensures that once a transaction is committed, it will remain so, even in the event of a system failure.
+* **CAP Theorem**: A principle that states that in a distributed data store, it is impossible to simultaneously guarantee all three of the following properties:
+  - **C**onsistency: Every read receives the most recent write or an error.
+  - **A**vailability: Every request receives a (non-error) response, without the guarantee that it contains the most recent write.
+  - **P**artition Tolerance: The system continues to operate despite an arbitrary number of messages being dropped (or delayed) by the network between nodes.
+* **Microservices**: An architectural style that structures an application as a collection of small, loosely coupled services that communicate over a network.
+* **Monolithic Architecture**: A traditional software architecture where all components of an application are tightly integrated and run as a single service.
+* **API (Application Programming Interface)**: A set of rules and protocols for building and interacting with software applications. It defines how different software components should interact.
+* **REST (Representational State Transfer)**: An architectural style for designing networked applications that use stateless communication and standard HTTP methods (GET, POST, PUT, DELETE).
+* **GraphQL**: A query language for APIs that allows clients to request only the data they need, reducing over-fetching and under-fetching of data.
+* **WebSocket**: A protocol that provides full-duplex communication channels over a single TCP connection, enabling real-time data transfer between clients and servers.
+* **Middleware**: Software that acts as a bridge between different applications or services, facilitating communication and data management.
+* **Containerization**: The practice of packaging an application and its dependencies into a container that can run consistently across different environments. Common tools include Docker and Kubernetes.
+* **Orchestration**: The automated arrangement, coordination, and management of complex computer systems, middleware, and services. Kubernetes is a popular orchestration tool for managing containerized applications.
+* **Cloud Computing**: The delivery of computing services (e.g., servers, storage, databases, networking, software) over the internet ("the cloud") to offer faster innovation, flexible resources, and economies of scale. Major providers include AWS, Azure, and Google Cloud.
+* **Serverless Computing**: A cloud computing execution model where the cloud provider dynamically manages the allocation and provisioning of servers. Developers can focus on writing code without worrying about server management.
+* **DevOps**: A set of practices that combines software development (Dev) and IT operations (Ops) to shorten the development lifecycle and deliver high-quality software continuously.
+* **CI/CD Pipeline**: A series of automated steps that enable continuous integration and continuous deployment of code changes to production.
+* **Monitoring**: The practice of continuously observing a system's performance, availability, and health to detect and respond to issues proactively.
+* **Logging**: The practice of recording events, errors, and other significant occurrences in a system to facilitate debugging and analysis.
+* **Alerting**: The practice of notifying relevant stakeholders when specific conditions or thresholds are met in a system, indicating potential issues that require attention.
+* **SLI (Service Level Indicator)**: A quantitative measure of some aspect of the level of service that is provided.
+* **SLO (Service Level Objective)**: A target value or range of values for a service level that is measured by an SLI.
+* **SLA (Service Level Agreement)**: A formal agreement between a service provider and a customer that defines the expected level of service, including SLOs and penalties for not meeting them.
+
+== Other
+
+* **Long Tail**: A business strategy that focuses on selling a large number of unique items with relatively small quantities sold of each, rather than focusing on a small number of popular items. This approach leverages the vast selection available in digital marketplaces to cater to niche markets and diverse customer preferences.

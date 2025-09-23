@@ -1,0 +1,59 @@
+= Object-Oriented Programming (OOP)
+ :doctype: article
+ :toc:
+ :toclevels: 2
+
+== What is Object-Oriented Programming?
+
+Object-Oriented Programming (OOP) is a programming paradigm based on the concept of "objects", which can contain data and code: data in the form of fields (often known as attributes or properties), and code in the form of procedures (often known as methods).
+
+== Key Concepts of OOP
+
+=== Encapsulation
+
+Encapsulation is the bundling of data with the methods that operate on that data. It restricts direct access to some of an object's components, which is a means of preventing unintended interference and misuse.
+
+=== Inheritance
+
+Inheritance allows a class to inherit properties and behavior (methods) from another class. This promotes code reuse and establishes a relationship between the parent and child classes.
+
+=== Polymorphism
+
+Polymorphism enables objects of different classes to be treated as objects of a common superclass. It is typically achieved through method overriding and interfaces.
+
+=== Abstraction
+
+Abstraction is the concept of hiding the complex implementation details and showing only the necessary features of an object.
+
+=== Coupling and Cohesion
+
+- Coupling refers to the degree of direct knowledge that one class has of another. Low coupling is often desired.
+- Cohesion refers to how closely related and focused the responsibilities of a single module are. High cohesion is often desired.
+
+== Example in Python
+
+[source,python]
+----
+class Animal:
+    def speak(self):
+        pass
+
+class Dog(Animal):
+    def speak(self):
+        return "Woof!"
+
+class Cat(Animal):
+    def speak(self):
+        return "Meow!"
+
+animals = [Dog(), Cat()]
+for animal in animals:
+    print(animal.speak())
+----
+
+== Benefits of OOP
+
+- Modularity
+- Code reuse
+- Scalability
+- Maintainability
