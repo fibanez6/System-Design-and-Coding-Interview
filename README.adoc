@@ -1,15 +1,22 @@
 = System Design and Coding Interview
 link:https://github.com/fibanez6/System-Design-and-Coding-Interview[System Design and Coding Interview]
 
-== Tech questions
+== Tech Questions
 
-* xref:Tech-questions/Data_Structures.adoc[Data Structures]
-* xref:Tech-questions/Databases.adoc[Databases]
-* xref:Tech-questions/Object_Oriented_Programming.adoc[Object Oriented Programming]
-* xref:Tech-questions/Pattern_Desing.adoc[Pattern Desing]
-* xref:Tech-questions/Principles_Design.adoc[Principles Design]
-* xref:Tech-questions/RESful_Design.adoc[RESful Design]
-* xref:Tech-questions/Terminology.adoc[Terminology]
+* xref:Tech-Questions/Data_Structures.adoc[Data Structures]
+* xref:Tech-Questions/Databases.adoc[Databases]
+* xref:Tech-Questions/Interview_Questions.adoc[Interview Questions]
+* xref:Tech-Questions/Object_Oriented_Programming.adoc[Object Oriented Programming]
+* xref:Tech-Questions/Pattern_Desing.adoc[Pattern Desing]
+* xref:Tech-Questions/Principles_Design.adoc[Principles Design]
+* xref:Tech-Questions/RESful_Design.adoc[RESful Design]
+* xref:Tech-Questions/Terminology.adoc[Terminology]
+* xref:Tech-Questions/Test_Questions.adoc[Test Questions]
+* xref:Tech-Questions/Tips.adoc[Tips]
+
+== Online Tests
+
+* xref:Online-Tests/Online_tests.adoc[Online tests]
 
 == System Design
 

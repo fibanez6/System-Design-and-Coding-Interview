@@ -1,0 +1,354 @@
+= Interview Questions
+:doctype: article
+:toc:
+:toclevels: 2
+
+== General Tech Questions
+
+=== 1. What is the difference between a process and a thread?
+A process is an independent program in execution with its own memory space, while a thread is a smaller unit of execution within a process that shares the same memory space.
+
+=== 2. What are the main principles of Object-Oriented Programming (OOP)?
+The main principles of OOP are Encapsulation, Inheritance, Polymorphism, and Abstraction.   
+
+=== 3. What is a RESTful API?
+A RESTful API is an application programming interface that adheres to the principles of Representational State Transfer (REST), using standard HTTP methods and stateless communication.    
+
+=== 4. What is the difference between SQL and NoSQL databases?
+SQL databases are relational and use structured query language for defining and manipulating data, while NoSQL databases are non-relational and can store unstructured or semi-structured data, often providing more flexibility and scalability.   
+
+=== 5. What is a microservices architecture?
+Microservices architecture is a design approach where an application is composed of small, independent services that communicate over a network, allowing for greater scalability, flexibility, and maintainability.    
+
+=== 6. What is the difference between synchronous and asynchronous programming?
+Synchronous programming executes tasks sequentially, blocking the execution until a task is completed, while asynchronous programming allows tasks to run concurrently, enabling other tasks to proceed without waiting for the previous ones to finish.
+
+=== 7. What is a design pattern? Can you name a few common design patterns?
+A design pattern is a reusable solution to a common problem in software design. Common design patterns include Singleton, Factory, Observer, Strategy, and Decorator.   
+
+=== 8. What is the difference between a stack and a queue?
+A stack is a Last In First Out (LIFO) data structure where the last element added is the first to be removed, while a queue is a First In First Out (FIFO) data structure where the first element added is the first to be removed.
+
+=== 9. What is the difference between a primary key and a foreign key in a database?
+A primary key is a unique identifier for a record in a database table, while a foreign key is a field in one table that references the primary key of another table, establishing a relationship between the two tables.
+
+=== 10. What is the purpose of indexing in databases?
+Indexing improves the speed of data retrieval operations on a database table by providing quick access to rows, at the cost of additional storage and slower write operations.
+
+=== 11. What is a deadlock in concurrent programming?
+A deadlock occurs when two or more processes are each waiting for the other to release a resource, causing all of them to be blocked indefinitely.
+
+=== 12. What is the difference between compile-time and run-time errors?
+Compile-time errors are detected by the compiler before the program runs, such as syntax errors, while run-time errors occur during program execution, such as division by zero or null pointer exceptions.
+
+=== 13. What is dependency injection?
+Dependency injection is a design pattern in which an object receives its dependencies from an external source rather than creating them itself, promoting loose coupling and easier testing.
+
+=== 14. What is the CAP theorem?
+The CAP theorem states that a distributed system can only guarantee two out of the following three properties at the same time: Consistency, Availability, and Partition Tolerance.
+
+=== 15. What is a load balancer?
+A load balancer is a device or software that distributes incoming network traffic across multiple servers to ensure no single server becomes overwhelmed, improving responsiveness and availability.
+
+
+== General Testing Questions
+
+=== 1. What is unit testing?
+Unit testing is a software testing method where individual components or functions of a program are tested in isolation to ensure they work as expected.
+
+=== 2. What is integration testing?
+Integration testing verifies that different modules or services used by your application work well together as a group.
+
+=== 3. What is the difference between black-box and white-box testing?
+Black-box testing evaluates the functionality of software without knowledge of its internal implementation, while white-box testing involves testing internal structures or workings of an application.
+
+=== 4. What is test-driven development (TDD)?
+Test-driven development is a software development process where tests are written before writing the actual code, guiding the design and ensuring correctness.
+
+=== 5. What is mocking in testing?
+Mocking is the practice of simulating the behavior of real objects or dependencies in tests to isolate the code under test.
+
+=== 6. What is code coverage?
+Code coverage is a metric that measures the percentage of source code executed during testing, helping to identify untested parts of a codebase.
+
+=== 7. What is regression testing?
+Regression testing is the process of re-running tests after changes to the codebase to ensure that existing functionality has not been broken.
+
+=== 8. What is continuous integration (CI) in the context of testing?
+Continuous integration is a development practice where code changes are automatically built, tested, and merged to a shared repository frequently, helping to detect issues early.
+
+=== 9. What is acceptance testing?
+Acceptance testing is a type of testing performed to determine if the requirements of a specification or contract are met, often involving end users or stakeholders.
+
+=== 10. What is the difference between functional and non-functional testing?
+Functional testing verifies that the software performs its intended functions, while non-functional testing checks aspects like performance, usability, reliability, and security.
+
+== Questions about tools
+
+=== 1. What is Git and why is it important?
+Git is a distributed version control system that allows multiple developers to track changes in source code during software development. It is important because it enables collaboration, branching, merging, and maintaining a history of changes, which helps teams manage code efficiently and resolve conflicts.
+
+=== 2. What is Docker and what are its main benefits?
+Docker is a platform for developing, shipping, and running applications in lightweight, portable containers. Its main benefits include consistency across environments, simplified deployment, isolation of applications, and efficient resource utilization.
+
+=== 3. What is Kubernetes used for?
+Kubernetes is an open-source container orchestration platform used to automate the deployment, scaling, and management of containerized applications. It helps manage clusters of containers, ensuring high availability and scalability.
+
+=== 4. What is Jenkins and how is it used in software development?
+Jenkins is an open-source automation server used to automate parts of the software development process, such as building, testing, and deploying code. It is commonly used for continuous integration and continuous delivery (CI/CD) pipelines.
+
+=== 5. What is Postman and how does it help developers?
+Postman is a collaboration platform for API development. It allows developers to design, test, and document APIs efficiently by providing a user-friendly interface for sending requests and analyzing responses.
+
+=== 6. What is Visual Studio Code and why is it popular?
+Visual Studio Code (VS Code) is a free, open-source code editor developed by Microsoft. It is popular due to its lightweight nature, extensive extension ecosystem, integrated debugging, and support for multiple programming languages.
+
+=== 7. What is Terraform and what problem does it solve?
+Terraform is an open-source infrastructure as code (IaC) tool that allows users to define and provision infrastructure using a declarative configuration language. It solves the problem of managing and automating infrastructure deployments across multiple cloud providers.
+
+=== 8. What is Ansible and how is it used?
+Ansible is an open-source automation tool used for configuration management, application deployment, and task automation. It uses simple YAML files to describe automation jobs and does not require agents on target systems.
+
+=== 9. What is the purpose of using an IDE (Integrated Development Environment)?
+An IDE provides a comprehensive environment for software development, integrating features like code editing, debugging, version control, and build automation to improve productivity and code quality.
+
+=== 10. What is the difference between Maven and Gradle?
+Maven and Gradle are both build automation tools for Java projects. Maven uses XML for configuration and follows a convention-over-configuration approach, while Gradle uses a Groovy or Kotlin DSL, offering more flexibility and faster incremental builds.
+
+=== 11. What content management systems (CMS) do you know how to use?
+I am familiar with several content management systems, including WordPress, Drupal, and Joomla. Each has its strengths and is suited for different types of projects.
+
+=== 12. What's your experience working with search engine optimization (SEO)?
+I have experience optimizing website content for search engines, including keyword research, on-page SEO techniques, and using tools like Google Analytics and SEMrush to track performance.
+
+=== 13. What customer relationship management (CRM) software do you prefer?
+I prefer using Salesforce for CRM because of its extensive features, customization options, and strong integration capabilities with other tools.
+
+=== 14. Tell me about the budgeting software you used in your last role.
+In my last role, I used QuickBooks for budgeting and financial management. It helped streamline invoicing, expense tracking, and financial reporting.
+
+=== 15. What tools have you used to manage a remote team?
+I have used tools like Slack for communication, Trello for project management, and Zoom for video conferencing to effectively manage remote teams.
+
+=== 16. What design software do you know how to use? 
+Many of my design friends use Figma, so I'm familiar with it, but I've used Sketch in most of my previous roles. Even though they are different, I have every confidence I'd be able to pivot to Figma once I get started, thanks to their overlapping similarities, especially when it comes to real-time collaboration.
+
+
+== Questions about processes
+
+=== 1. What is the software development lifecycle (SDLC)?
+The software development lifecycle (SDLC) is a structured process for planning, creating, testing, deploying, and maintaining software. Common phases include requirements gathering, design, implementation, testing, deployment, and maintenance.
+
+=== 2. What is Agile methodology?
+Agile is an iterative and incremental software development methodology that emphasizes flexibility, collaboration, customer feedback, and rapid delivery of small, functional pieces of software.
+
+=== 3. What is Scrum?
+Scrum is an Agile framework for managing software development projects. It organizes work into fixed-length iterations called sprints, with defined roles (Scrum Master, Product Owner, Development Team) and ceremonies (Sprint Planning, Daily Standup, Sprint Review, Sprint Retrospective).
+
+=== 4. What is Kanban?
+Kanban is a visual workflow management method that helps teams visualize work, limit work in progress, and optimize flow. It uses a Kanban board to track tasks through different stages.
+
+=== 5. What is DevOps?
+DevOps is a set of practices that combines software development (Dev) and IT operations (Ops) to shorten the development lifecycle and deliver high-quality software continuously through automation, collaboration, and monitoring.
+
+=== 6. What is continuous integration (CI) and continuous delivery (CD)?
+Continuous integration is the practice of automatically building and testing code changes as soon as they are committed. Continuous delivery extends CI by automatically deploying code changes to production or staging environments, ensuring software can be released at any time.
+
+=== 7. What is code review and why is it important?
+Code review is the process of examining code written by others to ensure quality, consistency, and correctness. It helps catch bugs early, promotes knowledge sharing, and improves maintainability.
+
+=== 8. What is incident management?
+Incident management is the process of identifying, responding to, and resolving unplanned events or outages that disrupt normal operations. It aims to restore service as quickly as possible and minimize impact.
+
+=== 9. What is change management in IT?
+Change management is a systematic approach to planning, implementing, and monitoring changes to IT systems and processes, minimizing risk and ensuring stability.
+
+=== 10. What is a post-mortem in software development?
+A post-mortem is a retrospective analysis conducted after a project or incident to identify what went well, what went wrong, and how processes can be improved in the future.
+
+=== 11. Are you familiar with Agile? When have you used it in the past?
+Yes, I am familiar with Agile methodologies. I have used Agile in several projects, particularly in software development, where we implemented Scrum practices to enhance collaboration and improve delivery times.
+
+=== 12. How do you ensure a new design meets a company's brand guidelines? 
+I ensure a new design meets a company's brand guidelines by thoroughly reviewing the brand's style guide, including colors, typography, imagery, and tone of voice. I also collaborate with stakeholders to gather feedback and make necessary adjustments to align the design with the brand identity.
+
+=== 13. How do you prioritize competing deadlines in a project? 
+I prioritize competing deadlines by assessing the urgency and importance of each task, considering dependencies, and communicating with stakeholders to understand their priorities. I use tools like task lists or project management software to organize and track progress, ensuring that critical tasks are completed on time while managing expectations for less urgent work.
+
+=== 14. How do you handle constructive feedback at each iterative stage?
+I handle constructive feedback by actively listening, asking clarifying questions if needed, and viewing it as an opportunity for growth. I take notes on the feedback, reflect on how it can improve my work, and implement changes in subsequent iterations. I also communicate with the feedback provider to ensure that I understand their perspective and expectations.
+
+=== 15. How do you ensure the validity of your quarterly projections?
+I ensure the validity of my quarterly projections by using historical data, market analysis, and input from key stakeholders. I regularly review and adjust the projections based on new information and trends, and I use statistical methods to validate the assumptions underlying the projections.
+
+== Situational questions
+
+=== 1. What's the biggest budget you've managed thus far?
+I have managed a budget of $500,000 for a product launch campaign, which involved coordinating with multiple teams and vendors to ensure effective allocation of resources.
+
+=== 2. What is a marketing campaign that's really caught your eye? Why?
+One marketing campaign that caught my eye was Nike's "Just Do It" campaign. I admire its ability to inspire and motivate people to push their limits, while also effectively promoting the brand's message of empowerment and determination.
+
+=== 3. How would you describe a project plan?
+A project plan is a formal document that outlines the objectives, scope, timeline, resources, and deliverables of a project. It serves as a roadmap for the project team and stakeholders, ensuring everyone is aligned and aware of their responsibilities.
+
+=== 4. What's your experience with risk management?
+I have experience in risk management through my work on various projects, where I identified potential risks, assessed their impact, and developed mitigation strategies. I believe in proactive risk management to minimize disruptions and ensure project success.
+
+=== 5. How do you determine your audience so you can identify the best tone to take?
+I determine my audience by conducting thorough research, including demographic analysis, surveys, and interviews. This helps me understand their preferences, pain points, and motivations, allowing me to tailor my messaging and tone accordingly.
+
+
+== General Questions
+
+=== 1. Do you prefer working on technical projects alone or with a team?
+Both approaches have their benefits. Working alone allows for deep focus and autonomy, while working with a team encourages collaboration, knowledge sharing, and diverse perspectives. Many technical professionals value a balance, enjoying independent problem-solving as well as teamwork to achieve the best results.
+
+=== 2. How do you stay up to date with trends and advancements in the technology sector?
+I stay updated by following industry news, participating in online forums, attending webinars and conferences, and engaging with professional networks on platforms like LinkedIn.
+
+=== 3. What is your favourite programming language and why?
+My favorite programming language is Python because of its simplicity and versatility. It's great for everything from web development to data analysis and machine learning.
+
+=== 4. How can you defend against a cross-scripting attack?
+To defend against cross-site scripting (XSS) attacks, you can implement input validation, use output encoding, and employ security headers like Content Security Policy (CSP).
+
+=== 5. What technical websites do you follow, and what do you like about them?
+I follow websites like Stack Overflow for community-driven Q&A, GitHub for open-source projects, and Medium for insightful articles on technology trends.
+
+=== 6. What productivity tool do you find the most useful and why?
+I find Trello to be the most useful productivity tool because it helps me organize tasks visually and collaborate effectively with team members.
+
+=== 7. What is the most important lesson you've learned from a colleague in a technical role?
+The most important lesson I've learned is the value of code reviews. They not only help catch bugs early but also facilitate knowledge sharing and improve code quality across the team.
+
+=== 8. Can you tell me about the computers you use outside the workplace?
+Outside of work, I use a personal laptop for development and a desktop for gaming and other resource-intensive tasks. I also have a Raspberry Pi for experimenting with IoT projects.
+
+=== 9. How might you rate your technical competencies for this position?
+I would rate my technical competencies as strong, with a solid foundation in the required skills and a proven track record of applying them effectively in real-world projects.
+
+=== 10. If you could design your dream role, what might that job entail?
+My dream role would involve a mix of hands-on development, architecture design, and mentoring junior developers, all within a collaborative and innovative team environment.
+
+== Questions about experience and background
+
+=== 1. Can you describe your previous experience in software development?
+I have worked on a variety of software development projects, ranging from web applications to backend services. My experience includes collaborating with cross-functional teams, designing scalable architectures, and implementing robust solutions using modern programming languages and frameworks.
+
+=== 2. What programming languages are you most comfortable with?
+I am most comfortable with languages such as Python, Java, and JavaScript. I have also worked with C#, Go, and TypeScript in different projects.
+
+=== 3. Have you worked with cloud platforms? Which ones?
+Yes, I have experience with cloud platforms like AWS, Azure, and Google Cloud Platform. I have used these platforms for deploying applications, managing infrastructure, and leveraging cloud-native services.
+
+=== 4. Can you give an example of a challenging technical problem you solved?
+In a previous project, I optimized a slow-running database query by analyzing execution plans and adding appropriate indexes, which reduced the response time from several seconds to under 100 milliseconds.
+
+=== 5. What development methodologies have you used?
+I have experience working with Agile methodologies such as Scrum and Kanban, as well as traditional Waterfall approaches. I am comfortable adapting to different team processes.
+
+=== 6. How do you approach learning a new technology or tool?
+I start by reviewing official documentation and tutorials, then build small projects or prototypes to gain hands-on experience. I also seek out community resources and best practices.
+
+=== 7. Have you contributed to open-source projects?
+Yes, I have contributed to several open-source projects on GitHub, including bug fixes, documentation improvements, and new features.
+
+=== 8. What is your experience with version control systems?
+I am proficient with Git and have used it for source control, branching, merging, and collaborating with distributed teams.
+
+=== 9. Can you describe a time when you had to quickly adapt to a new technology?
+In a recent role, I had to learn and implement a microservices architecture using Docker and Kubernetes within a tight deadline. I quickly ramped up by following tutorials and collaborating with experienced colleagues.
+
+=== 10. How do you ensure code quality in your projects?
+I ensure code quality by writing unit and integration tests, conducting code reviews, following coding standards, and using static analysis tools.
+
+=== 11. How did you learn to code? What was the first program you created?
+I learned to code through a combination of formal education and self-study. The first program I created was a simple "Hello, World!" application in Python, which sparked my interest in programming and led me to explore more complex projects.
+
+=== 12. What were your technical responsibilities in your last project?
+In my last project, I was responsible for designing and implementing backend services, integrating third-party APIs, ensuring data security, and collaborating with front-end developers to deliver a seamless user experience. I also participated in code reviews and mentored junior team members.
+
+=== 13. How did your education and training prepare you for this technical role?
+My education provided a strong foundation in computer science principles, algorithms, and data structures, while my training included hands-on experience with various programming languages and development tools. This combination has equipped me with the skills needed to tackle complex technical challenges and adapt to new technologies quickly.
+
+=== 14. Can you tell me about a tech manager that you feel got the best out of you? Why do you think working with them was so beneficial for you?
+One tech manager who had a significant impact on my career was my manager at XYZ Corp. They fostered a culture of open communication and collaboration, which made me feel comfortable sharing my ideas and asking for help when needed. Their mentorship helped me grow my technical skills and gain confidence in my abilities.
+
+=== 15. Can you tell me about one of the most interesting technical projects you've worked on recently?
+One of the most interesting technical projects I worked on recently was developing a real-time analytics dashboard for monitoring user engagement on a web application. The project involved integrating various data sources, implementing WebSocket communication for live updates, and optimizing performance to handle high traffic. It was rewarding to see how the dashboard provided valuable insights to stakeholders and improved decision-making.
+
+=== 16. Can you tell me about a time when you improved on a technical design or process?
+In a previous project, I identified that our API response times were slower than desired. I proposed and implemented a caching layer using Redis, which significantly reduced the load on our database and improved response times by 50%. This change not only enhanced the user experience but also optimized resource usage.
+
+=== 17. Which source control tools are you familiar with?
+I am familiar with Git and have used platforms like GitHub, GitLab, and Bitbucket for version control, collaboration, and code review processes.
+
+=== 18. How do you ensure your deliverables are to a high standard?
+I ensure high standards by following best practices in coding, conducting thorough testing, seeking feedback through code reviews, and continuously iterating based on user and stakeholder input.
+
+=== 19. What is your process for working through a new technical project?
+When starting a new technical project, I begin by understanding the requirements and objectives. I then break down the project into smaller tasks, create a timeline, and prioritize based on dependencies. I research any new technologies needed, set up the development environment, and start with a prototype or minimum viable product (MVP). Throughout the project, I maintain regular communication with stakeholders, conduct code reviews, and perform testing to ensure quality.
+
+=== 20. How do you accurately estimate how long tech projects might take?
+To accurately estimate the duration of tech projects, I consider factors such as the complexity of the project, the technologies involved, and the team's familiarity with them. I break the project down into smaller tasks and use historical data from similar projects to inform my estimates. Additionally, I involve the team in the estimation process to gather diverse perspectives and account for potential challenges.
+
+== In-depth questions
+
+=== 1. How do you think the business could improve its website?
+I believe the business could improve its website by enhancing the user experience through a more intuitive design, optimizing page load times, and ensuring mobile responsiveness. Additionally, implementing SEO best practices and regularly updating content could help attract more visitors.
+
+=== 2. Imagine the business asked you to research a new project management tool. You find two suitable options: an on-premises solution and a cloud-based one. If they both served the business's purposes, which project management tool might you recommend and why?
+I would recommend the cloud-based solution for its scalability, ease of access, and lower upfront costs. Cloud-based tools often provide better collaboration features and automatic updates, which can enhance productivity and reduce the burden on IT resources.
+
+=== 3. In your opinion, what database performance metrics are the most important and how do you monitor them?
+I believe key database performance metrics include query response time, throughput (queries per second), and resource utilization (CPU, memory, disk I/O). To monitor these metrics, I use database monitoring tools that provide real-time insights and historical data. Additionally, I implement logging and profiling to identify slow queries and optimize them.
+
+=== 4. How might you explain how the internet works to someone from a non-technical background?
+I would explain that the internet is like a vast network of computers connected to each other, allowing them to share information. When you access a website, your computer sends a request to a server (a powerful computer that hosts the website), which then sends back the information you want to see, such as text, images, or videos. This process happens very quickly, thanks to various technologies that help route the information efficiently across the network.
+
+=== 5. What qualities might you look for in assembling a tech team?
+When assembling a tech team, I would look for a mix of technical skills, problem-solving abilities, and strong communication skills. It's important to have team members who are adaptable, collaborative, and willing to learn. Diversity in experience and perspectives can also lead to more innovative solutions. Additionally, I would value individuals who are passionate about technology and committed to delivering high-quality work.
+
+=== 6. What might you have done differently in your last project if you had more time or resources?
+If I had more time or resources in my last project, I would have focused more on thorough testing and quality assurance to ensure a more robust final product. I would also have allocated additional time for user feedback and iterations to better align the product with user needs. Furthermore, investing in better documentation and knowledge sharing within the team could have improved collaboration and future maintenance of the project.
+
+=== 7. What do you see as the greatest challenge for tech businesses today?
+One of the greatest challenges for tech businesses today is staying ahead of rapid technological advancements while ensuring data security and privacy. Balancing innovation with regulatory compliance, managing cybersecurity threats, and adapting to changing customer expectations are critical for maintaining competitiveness in the market.
+
+=== 8. What trends do you expect to impact tech businesses over the next five years?
+I expect trends such as artificial intelligence and machine learning, edge computing, and the continued growth of cloud services to significantly impact tech businesses. Additionally, advancements in 5G technology will enable faster connectivity and new applications. The increasing focus on sustainability and ethical technology practices will also shape how tech businesses operate and innovate.
+
+=== 9. How do you think technological advancements may impact this job?
+Technological advancements may impact this job by introducing new tools and frameworks that can enhance productivity and efficiency. Automation and AI could take over repetitive tasks, allowing me to focus on more complex problem-solving and creative aspects of the role. Additionally, staying updated with emerging technologies will be crucial to ensure that the solutions I develop remain relevant and competitive in a rapidly evolving landscape.
+
+=== 10. If you had an unlimited budget to create a tech application for the business, what might you develop?
+If I had an unlimited budget to create a tech application for the business, I would develop a comprehensive customer relationship management (CRM) system integrated with AI-driven analytics. This application would provide personalized customer experiences, automate marketing campaigns, and offer real-time insights into customer behavior. Additionally, it would include features for seamless communication across multiple channels (email, social media, chat) and robust data security measures to protect customer information. The goal would be to enhance customer engagement, improve sales processes, and drive business growth through data-driven decision-making.
+
+
+== Interview questions with example answers
+
+=== 1. What might you do when faced with an unfamiliar technical task?
+Interviewers expect their candidates to have some knowledge gaps. They ask this question to assess whether candidates can accept and address these knowledge gaps. The best candidates try to learn independently before seeking assistance.
+
+*Example answer:* 'I might see whether I could find a tutorial online to guide me through the process. It's better to find helpful advice rather than attempt an unfamiliar task independently and risk making mistakes. If I was unable to figure out the process myself, I might ask a more experienced team member or my supervisor for their assistance.'
+
+=== 2. Can you tell me about a project you participated in outside of school or work and your technical contribution to it?
+Interviewers ask this question to determine whether you're passionate about technical work. Speaking in an animated way can demonstrate your enthusiasm for the project. They may look up your side project if it's in the public domain, so it's best to discuss a project that demonstrates your technical skill.
+
+*Example answer:* 'My friends love football so I developed a website for a tipping competition for us. I added a payment portal that allowed us to pay an entry fee, which gets deposited into the winner's account at the end of the season. Through this website, we can submit our tips each week and view a ladder, updated in real-time, showing our weekly and total scores. I also added a chat function so we can comment on our performance and stay connected during the football season.'
+
+=== 3. Have you signed up for an account on our website? How might you improve this process?
+These questions can tell an interviewer whether you've researched the workplace and have technical insights you can share. Signing up for an account shows your interest in the business. Noting some minor improvements demonstrates your research and understanding of user experience and security.
+
+*Example answer:* 'I signed up for an account when I secured this job interview to learn more about the business's loyalty program and shopping experience. Sign-up was easy, although I might insist users create more secure passwords. A minimum number of characters, including a number and special character, could make passwords more secure and protect your customers' data. I might also make sharing a phone number optional. Some people are reluctant to share a lot of personal information, so this may be a barrier to sign-up. The business could email customers with any issues, rather than calling them.'
+
+=== 4. What is your greatest technological pet peeve?
+This question encourages you to discuss a technological issue that irks you. Try to mention a minor tech issue the interviewer may understand and sympathise with to create a connection between the two of you. Consider keeping the conversation upbeat by giving a concise answer. You may also like to use humour in your answer if you deem it appropriate.
+
+*Example answer:* 'Slow technology really bothers me. Slow Wi-Fi and slow processing speeds when I'm using apps and software can be so frustrating. I tend to think quickly, so having technology slow me down when I'm conducting research or switching between tasks is a definite pet peeve. And if you've ever gamed like me, you know how frustrating a lag can be when you're in a raid.'
+
+=== 5. What are the benefits and drawbacks of working in an Agile environment?
+This question tests your understanding of Agile environment. You may draw from your experiences working in an Agile environment and note some of the best parts and challenges. You could also mention how you minimise the impact of any drawbacks of the Agile environment.
+
+*Example answer:* 'I appreciate the flexibility that an Agile environment provides. It gives my team the freedom to try new things, collect feedback and adjust our approach to get the best possible result for our customers. The focus on face-to-face communication can also be helpful for gaining meaningful, clear feedback. The flexibility of Agile makes estimating turnaround times and resources more challenging. While collaboration and communication can be so beneficial, meetings can be time-consuming. Creating meeting outlines and adjourning once we satisfy them can help us use our time more effectively.'

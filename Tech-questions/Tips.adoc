@@ -1,0 +1,16 @@
+= Tips for Answering Interview Questions
+:doctype: article
+:toc:
+:toclevels: 2
+
+== General Tips
+
+* Listen carefully to the question before answering.
+* Clarify any ambiguities or assumptions.
+* Think out loud to show your problem-solving approach.
+* Structure your answers logically.
+* Communicate clearly and concisely.
+* If you get stuck, explain your thought process and how you would proceed.
+* Use examples or analogies when appropriate.
+* Ask for feedback or hints if allowed.
+
