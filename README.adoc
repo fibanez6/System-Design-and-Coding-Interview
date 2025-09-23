@@ -12,15 +12,15 @@ link:https://github.com/fibanez6/System-Design-and-Coding-Interview[System Desig
 
 == System Design
 
+* xref:System-Design/Pattern_Desing.adoc[Pattern Desing]
+* xref:System-Design/Principles_Design.adoc[Principles Design]
+* xref:System-Design/RESful_Design.adoc[RESful Design]
 
 == Tech Questions
 
 * xref:Tech-Questions/Data_Structures.adoc[Data Structures]
 * xref:Tech-Questions/Databases.adoc[Databases]
 * xref:Tech-Questions/Object_Oriented_Programming.adoc[Object Oriented Programming]
-* xref:Tech-Questions/Pattern_Desing.adoc[Pattern Desing]
-* xref:Tech-Questions/Principles_Design.adoc[Principles Design]
-* xref:Tech-Questions/RESful_Design.adoc[RESful Design]
 * xref:Tech-Questions/Terminology.adoc[Terminology]
 * xref:Tech-Questions/Test_Questions.adoc[Test Questions]
 
