@@ -8,6 +8,7 @@ link:https://github.com/fibanez6/System-Design-and-Coding-Interview[System Desig
 * xref:Tech-questions/Object_Oriented_Programming.adoc[Object Oriented Programming]
 * xref:Tech-questions/Pattern_Desing.adoc[Pattern Desing]
 * xref:Tech-questions/Principles_Design.adoc[Principles Design]
+* xref:Tech-questions/RESful_Design.adoc[RESful Design]
 * xref:Tech-questions/Terminology.adoc[Terminology]
 
 == System Design

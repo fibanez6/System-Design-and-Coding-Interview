@@ -1,0 +1,185 @@
+= RESTful API Design
+:doctype: article
+:toc:
+:toclevels: 2
+
+== What is a RESTful API?
+
+A RESTful API (Representational State Transfer) is an architectural style for designing networked applications. It relies on stateless, client-server communication, typically over HTTP, and uses standard HTTP methods such as GET, POST, PUT, and DELETE.
+
+== Key Principles of RESTful API Design
+
+* **Statelessness**: Each request from a client contains all the information needed to process the request.
+* **Resource-Based**: Resources are identified by URIs, and manipulated using standard HTTP methods.
+* **Uniform Interface**: Consistent, standardized interactions between clients and servers.
+* **Layered System**: The architecture can be composed of hierarchical layers.
+* **Cacheability**: Responses must define themselves as cacheable or not.
+
+== Common HTTP Methods
+
+[cols="1,2,1,2", options="header"]
+|===
+| Method  | Description                                   | Idempotent | Recommended HTTP Status Codes
+| GET     | Retrieve a resource                           | Yes        | 200 OK, 404 Not Found
+| POST    | Create a new resource                         | No         | 201 Created, 400 Bad Request
+| PUT     | Update an existing resource                   | Yes        | 200 OK, 204 No Content, 404 Not Found, 409 Conflict (no possible to update)
+| DELETE  | Remove a resource                             | Yes        | 200 OK, 204 No Content, 404 Not Found
+| PATCH   | Partially update a resource                   | No         | 200 OK, 204 No Content, 400 Bad Request, 404 Not Found
+| OPTIONS | Describe the communication options for target | Yes        | 204 No Content
+| HEAD    | Retrieve metadata (headers) for a resource    | Yes        | 200 OK, 404 Not Found
+|===
+
+== Best Practices
+
+* Use nouns for resource URIs, not verbs.
+* Support filtering, sorting, and pagination.
+* Use proper HTTP status codes.
+* Version your API.
+* Provide meaningful error messages.
+
+== API Versioning Example
+
+A common approach is to include the version number in the URI:
+
+[source,http]
+----
+GET /v1/users/123
+----
+
+This request retrieves user details from version 1 of the API.
+
+Alternatively, versioning can be handled via headers:
+
+[source,http]
+----
+GET /users/123
+Accept: application/vnd.example.v2+json
+----
+
+This request asks for version 2 of the API response format.
+
+== HTTP Status Codes
+
+[cols="1,2", options="header"]
+|===
+| Status Code | Meaning
+| 200 OK      | The request was successful.
+| 201 Created | A new resource has been created.
+| 202 Accepted | The request has been accepted for processing, but the processing is not complete.
+| 204 No Content | The request was successful, but there is no content to return.
+| 301 Moved Permanently | The resource has been moved to a new URI.
+| 302 Found | The resource resides temporarily under a different URI; the client should use the new URI for this request.
+| 307 Temporary Redirect | The resource resides temporarily under a different URI; the client should repeat the request with the new URI.
+| 308 Permanent Redirect | The resource has been permanently moved to a new URI (preferred over 301 for APIs).
+| 304 Not Modified | The resource has not been modified since the last request.
+| 400 Bad Request | The request was invalid or cannot be served.
+| 401 Unauthorized | Authentication is required and has failed or not been provided.
+| 402 Payment Required | Reserved for future use; sometimes used for payment-related APIs.
+| 403 Forbidden | The server understood the request, but refuses to authorize it.
+| 404 Not Found | The requested resource could not be found.
+| 405 Method Not Allowed | The HTTP method is not allowed for the requested resource.
+| 409 Conflict | The request could not be completed due to a conflict with the current state of the resource.
+| 410 Gone | The resource requested is no longer available and will not be available again.
+| 411 Length Required | The server requires a Content-Length header.
+| 412 Precondition Failed | One or more conditions given in the request header fields evaluated to false.
+| 414 URI Too Long | The URI provided was too long for the server to process.
+| 418 I'm a teapot | Returned by teapots requested to brew coffee (RFC 2324, an April Fools' joke).
+| 426 Upgrade Required | The client should switch to a different protocol.
+| 428 Precondition Required | The server requires the request to be conditional.
+| 451 Unavailable For Legal Reasons | The resource is unavailable due to legal reasons.
+| 415 Unsupported Media Type | The request entity has a media type which the server or resource does not support.
+| 429 Too Many Requests | The user has sent too many requests in a given amount of time.
+| 500 Internal Server Error | A generic error occurred on the server.
+| 501 Not Implemented | The server does not support the functionality required to fulfill the request.
+| 502 Bad Gateway | The server received an invalid response from the upstream server.
+| 503 Service Unavailable | The server is currently unable to handle the request due to temporary overload or maintenance.
+| 504 Gateway Timeout | The server did not receive a timely response from the upstream server.
+| 505 HTTP Version Not Supported | The server does not support the HTTP protocol version used in the request.
+| 507 Insufficient Storage | The server is unable to store the representation needed to complete the request.
+| 508 Loop Detected | The server detected an infinite loop while processing the request.
+| 510 Not Extended | Further extensions to the request are required for the server to fulfill it.
+| 511 Network Authentication Required | The client needs to authenticate to gain network access.
+|===
+
+=== Differences Between 301 and 308 Status Codes
+
+Both 301 (Moved Permanently) and 308 (Permanent Redirect) status codes indicate that a resource has been permanently moved to a new URI. However, there are key differences in how they handle HTTP methods and request bodies:
+
+[NOTE]
+====
+In the Fetch Standard, when a user agent receives a 302 in response to a POST request, it uses the GET method in the subsequent redirection request, as permitted by the HTTP specification. To avoid user agents modifying the request, use 307 Temporary Redirect instead, as altering the method after a 307 response is prohibited.
+
+In cases where you want any request method to be changed to GET, use 303 See Other. This is useful when you want to give a response to a PUT method that is not the uploaded resource but a confirmation message such as: "you successfully uploaded XYZ".
+==== 
+
+* **301 Moved Permanently**:
+  - The client may change the HTTP method from POST to GET when following the redirect.
+  - The request body may be discarded when the method changes.
+  - This behavior can lead to unintended consequences, especially for non-idempotent methods like POST.
+* **308 Permanent Redirect**:
+  - The client must not change the HTTP method when following the redirect.
+  - The request body must be preserved, ensuring that the original request semantics are maintained.   
+  - This makes 308 more suitable for APIs where the method and body need to remain unchanged.
+  - This status code is particularly useful for APIs that require strict adherence to the original request method and body, such as POST requests that create resources. 
+  - It is a more recent addition to the HTTP specification and may not be as widely supported as 301.
+
+=== Differences Between 302 and 307 Status Codes
+
+Both 302 (Found) and 307 (Temporary Redirect) status codes indicate that a resource is temporarily located at a different URI. However, there are key differences in how they handle HTTP methods and request bodies:
+
+* **302 Found**:
+  - The client may change the HTTP method from POST to GET when following the redirect.
+  - The request body may be discarded when the method changes.
+  - This behavior can lead to unintended consequences, especially for non-idempotent methods like POST.
+* **307 Temporary Redirect**:
+  - The client must not change the HTTP method when following the redirect.
+  - The request body must be preserved, ensuring that the original request semantics are maintained.   
+  - This makes 307 more suitable for APIs where the method and body need to remain unchanged.
+  - This status code is particularly useful for APIs that require strict adherence to the original request method and body, such as POST requests that create resources. 
+  - It is a more recent addition to the HTTP specification and may not be as widely supported as 302.
+
+== HATEOSAS (Hypermedia As The Engine Of Application State)
+
+HATEOAS is a constraint of the REST application architecture that keeps the RESTful style. It is a way for a server to provide information about available actions and resources to clients dynamically through hypermedia links included in the responses. This allows clients to navigate the API based on the current state of the application without needing prior knowledge of the API structure.
+
+[cols="1,2", options="header"]
+|===
+| Term     | Description
+| Hypermedia | A type of content that contains links to other resources, allowing clients to navigate the API dynamically.
+| Application State | The current state of the application, which can change based on user interactions and server responses.
+|===    
+
+[NOTE]
+====
+HATEOAS is often misunderstood as simply including hyperlinks in API responses. However, it goes beyond that by providing a way for clients to discover and interact with resources based on the current state of the application. This means that the server guides the client through the available actions and resources, making the API more flexible and easier to evolve over time.
+====    
+
+=== Example of HATEOAS
+
+[source,json]
+----
+{
+  "user": {
+    "id": 123,
+    "name": "John Doe",
+    "links": [  
+      {
+        "rel": "self",
+        "href": "/users/123"
+      },
+      {
+        "rel": "orders",
+        "href": "/users/123/orders"
+      },
+      {
+        "rel": "update",
+        "href": "/users/123",
+        "method": "PUT"
+      }
+    ]
+  }
+}
+----
+
+In this example, the API response includes links that allow the client to navigate to the user's details, view their orders, or update their information. The client can use these links to interact with the API without needing to know the exact URIs beforehand.
+

@@ -41,8 +41,6 @@ ACID is an acronym that stands for Atomicity, Consistency, Isolation, and Durabi
 4. **Durability**: This property ensures that once a transaction has been committed, it will remain committed even in the event of a system failure. The changes made by the transaction are permanently recorded in the database.  
 
 
-
-
 == Database Normalization
 
 Database normalization is the process of organizing the fields and tables of a relational database to minimize redundancy and dependency. The main goals of normalization are to eliminate redundant data, ensure data dependencies make sense, and simplify the structure of the database.
