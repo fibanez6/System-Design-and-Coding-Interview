@@ -47,9 +47,19 @@ Dependency injection is a design pattern in which an object receives its depende
 === 14. What is the CAP theorem?
 The CAP theorem states that a distributed system can only guarantee two out of the following three properties at the same time: Consistency, Availability, and Partition Tolerance.
 
+[example]
+====
+.Example of CAP theorem in practice
+Consider a distributed database system like MongoDB deployed across multiple data centers. If a network partition occurs between the data centers (Partition Tolerance), the system must choose between:
+
+- Consistency: Rejecting requests to ensure all nodes see the same data, but some requests may fail (sacrificing Availability).
+- Availability: Allowing requests to succeed with potentially stale or divergent data (sacrificing Consistency).
+
+For example, if a write is made in one data center during a partition, other data centers may not see the update immediately. MongoDB can be configured to prioritize either Consistency or Availability, but not both during a partition, illustrating the CAP theorem trade-offs.
+====
+
 === 15. What is a load balancer?
 A load balancer is a device or software that distributes incoming network traffic across multiple servers to ensure no single server becomes overwhelmed, improving responsiveness and availability.
-
 
 == General Testing Questions
 

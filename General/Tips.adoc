@@ -14,3 +14,29 @@
 * Use examples or analogies when appropriate.
 * Ask for feedback or hints if allowed.
 
+* Company values - research
+
+== Tell stories from Your Experience
+
+Prepare a few stories that highlight how you've put key skills into practice and how you've handled real challenges
+
+* Prepare a few stories from your experience that demonstrate key skills:
+** A time you solved a difficult problem.
+** A situation where you worked effectively in a team.
+** An example of learning something new quickly.
+** A moment when you handled failure or setbacks.
+* Use the STAR method (Situation, Task, Action, Result) to structure your stories.
+* Practice telling your stories out loud to ensure clarity and confidence.
+* Relate your stories to the job requirements when possible.
+
+[IMPORTANT]
+====
+When preparing your stories, make sure each one is based on a deliverable project to the client. Avoid using proof-of-concept (POC) or purely experimental work as examples.
+==== 
+
+*Proposals*
+
+- onboarding to mcq
+- rates
+- Monolithic system to microservices
+- card dispenser
