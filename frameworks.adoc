@@ -2,15 +2,43 @@
 
 == Python
 
-Async frameworks para Python
+Async frameworks for Python
 
-Hay varias opciones populares:
+There are several popular options:
 
 [cols="1,2", options="header"]
 |===
-| Framework | Ejemplo apps para Azure AI
+| Framework | Example apps for Azure AI
 | Quart     | aka.ms/azai/chat, aka.ms/chat-vision-app, aka.ms/ragchat
 | FastAPI   | aka.ms/azai/fastapi, aka.ms/rag-postgres
 | Aiohttp   | aka.ms/voicerag/repo
-| Django con async |
+| Django with async |
 |===
+
+
+== AI - Language Models (LM)
+
+Popular language models (LM) that can run locally or in the cloud:
+
+[cols="1,1,1", options="header"]
+|===
+| Model         | Provider / Type      | Example usage
+| GPT-4         | OpenAI LLM           | Available in Azure OpenAI and OpenAI Cloud
+| Llama 3       | Meta LLM             | Can run locally (Ollama, LM Studio) or in the cloud
+| Mistral       | Open-source LLM      | Supported by Ollama and cloud services
+| Phi-3         | Microsoft SLM        | Efficient for local and Azure AI deployment
+| Gemma         | Google SLM           | Optimized for local devices and cloud
+| Vicuna        | Open-source LLM      | Can run locally
+|===
+
+[NOTE]
+====
+- SLM stands for Small Language Model.
+- LLM stands for Large Language Model.
+
+Choose between SLM and LLM based on the application's performance and accuracy requirements.
+====
+
+Tools like Ollama, LM Studio, and Azure AI allow running these models locally or in the cloud.
+
+

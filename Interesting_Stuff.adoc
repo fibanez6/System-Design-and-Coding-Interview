@@ -8,6 +8,13 @@
 
 - link:https://bbycroft.net/llm[LLM Visualization]
 
+=== Fine Tuning
+
+Fine-tuning is the process of adapting a pre-trained AI model to a specific task or dataset by continuing its training on new, relevant data. This technique improves model performance for specialized applications while leveraging existing knowledge.
+
+- Efficient fine-tuning library: link:https://unsloth.ai/[Unsloth AI] - link:https://github.com/unslothai/unsloth[GitHub repo]
+
+
 === Demos
 
 - link:https://github.com/Azure-Samples/python-openai-demos[Python OpenAI Demos]
