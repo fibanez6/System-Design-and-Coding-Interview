@@ -11,6 +11,7 @@
 === Demos
 
 - link:https://github.com/Azure-Samples/python-openai-demos[Python OpenAI Demos]
+- link:https://www.albertcoronado.com/[Demos and articles by Albert Coronado]
 
 == Events
 

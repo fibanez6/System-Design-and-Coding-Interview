@@ -1,0 +1,16 @@
+= Frameworks
+
+== Python
+
+Async frameworks para Python
+
+Hay varias opciones populares:
+
+[cols="1,2", options="header"]
+|===
+| Framework | Ejemplo apps para Azure AI
+| Quart     | aka.ms/azai/chat, aka.ms/chat-vision-app, aka.ms/ragchat
+| FastAPI   | aka.ms/azai/fastapi, aka.ms/rag-postgres
+| Aiohttp   | aka.ms/voicerag/repo
+| Django con async |
+|===
