@@ -1,0 +1,13 @@
+= Interesting Stuff
+
+== IA
+
+- Link to Microsoft Reactor event: link:https://developer.microsoft.com/en-us/reactor/events/26280/[Python + AI: Modelos de Lenguaje]
+
+- Link to GitHub Models Marketplace: link:https://github.com/marketplace/models[GitHub Models Marketplace]
+
+- link:https://bbycroft.net/llm[LLM Visualization]
+
+== Events
+
+- Link to Microsoft event: link:https://developer.microsoft.com/en-us/events[Microsoft Events]
