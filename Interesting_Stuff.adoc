@@ -8,6 +8,10 @@
 
 - link:https://bbycroft.net/llm[LLM Visualization]
 
+=== Demos
+
+- link:https://github.com/Azure-Samples/python-openai-demos[Python OpenAI Demos]
+
 == Events
 
 - Link to Microsoft event: link:https://developer.microsoft.com/en-us/events[Microsoft Events]
